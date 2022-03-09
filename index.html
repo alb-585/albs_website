@@ -1,5 +1,5 @@
 <style>
-img{
+Opulent.banner.png{
 	float:center;
 	border-style:solid;
 	border-width:3px;
@@ -9,17 +9,20 @@ img{
 	margin-left:10px;
 	margin-right:10px;
 	width: 80%;
-	height:35%;}
+	height:35%;}}
 	
-		}
+	form{border-style:solid;
+		align:center;
+		float:left;
+		padding:5px;}
 	
 body{
 	background-color:#A7A7A7;
 	border-style:solid;
 	border-color:white;
 	border-width:10px;
-	margin-right:75px;
-	margin-left:75px;
+	margin-right:45px;
+	margin-left:45px;
 	margin-color:white;
 	}
 		
@@ -60,6 +63,19 @@ footer{
 </div>
 </nav>
 
+<form action="/action_page.php" method="get" name="myForm">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email"><br><br>
+  <input type="button" onclick="formSubmit()" value="Send form data!">
+  </form>
 
+<footer>
 
+</footer>
+
+  
 </html>
